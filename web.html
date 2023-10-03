@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background:blue;
+      }
+      
+      
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: yellow;
+      }
+      
+      .header h1 {
+        font-size: 50px;
+      }
+      
+      
+      .topnav {
+        overflow: hidden;
+        background-color:pink;
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      
+      .topnav a:hover {
+        background-color: palevioletred;
+        color: black;
+      }
+      
+     
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: skyblue;
+        padding-left: 20px;
+      }
+      
+      
+      .fakeimg {
+        background-color:darkblue;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      
+      .card {
+        background-color: rgb(250, 222, 226);
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: yellow;
+        margin-top: 20px;
+      }
+      
+      
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      
+      
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Rider</h1>
+        <h2>"Your travel mate"</h2>
+      </div>
+      
+      <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">UsedCars</a>
+        <a href="#">NewCars</a>
+        <a href="#" style="float:right">About us</a>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Our Upcommings</h2>
+            <h5>Upcomming New cares are</h5>
+            <img src="https://th.bing.com/th?id=OIP.CEDD46_osirfW2plTNspLwHaE7&w=306&h=203&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.1C4uQn5s-hyi7XaW_25m4wHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.QkVsPpAKQ340IOw9Ir4w-wHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+        </div>
+          <div class="card">
+            <h2>Poppular Cars</h2>
+            <h5>These are New Launched the Poppular Cars</h5>
+            <img src="data:image/jpeg;base64,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" alt="">
+            <img src="https://th.bing.com/th/id/OIP.uQIJb1TyA7jlthe248QeFgHaEK?w=288&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+            <img src="https://th.bing.com/th/id/OIP.TnrOwhGnEbJmnZGnccC0ygHaEK?w=308&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+            <p>If you’re reading this then you might be thinking of getting a 4×4 vehicle. <br>
+                 As with other cars, 4x4s come in different types. This article is a complete guide to <br>
+                 4×4 vehicle types and models. We’ll also take a look at some things to consider to help <br>
+                 you choose the right 4×4 for you. </p>
+            <img src="https://th.bing.com/th?id=OIP.XcS75OlN5JAsC1DNF-9ewgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.NDOdMC_KsCMy-cpI6kRK5wHaEW&w=326&h=191&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.1p5Q1B6MQa8gTWCn6_ZObgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+        <img src="https://th.bing.com/th/id/OIP.i3A68YOaeKJvLzd9fe3C7AHaEo?w=253&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+        <img src="https://th.bing.com/th/id/OIP.cNZrcxE0sl9XHxtIGLevfwHaE8?w=257&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+        <img src="https://th.bing.com/th/id/OIP.9Y6af246bUkWbNeyLv5w6QHaEo?w=256&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+       <img src="https://th.bing.com/th/id/OIP.p4P3xSVw4rVLwB1o8YzQaAHaFj?w=251&h=187&c=7&r=0&o=5&pid=1.7" alt=""> 
+       <img src="https://th.bing.com/th/id/OIP.z1_YjP2SUM4VR0fJK-CIdQHaEK?w=293&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+       <img src="https://th.bing.com/th/id/OIP.aXclQVA_HTBlQmH41SrpNQHaEo?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+       <img src="https://th.bing.com/th/id/OIP.1Gacl72ZzuAThVIjs-om_AHaE8?w=238&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+    </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>BRANDS</h2>
+          <img src="https://th.bing.com/th?id=OIP.7ueX1H31iEHlbcwUXfGz7gAAAA&w=298&h=204&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=SMRS" alt="">
+           <img src="https://th.bing.com/th/id/OIP.RjtvTHFQmL97DXEqhXc4rQHaE2?w=228&h=180&c=7&r=0&o=5&pid=1.7" alt=""> 
+            <p>With the growth of the Indian car market, <br>
+                 many people have started looking for <br>
+                 vehicles that have been manufactured in India. <br> 
+                 Are you planning on purchasing a vehicle from one <br>
+                 of the Indian car brands? If so, then here is a <br>
+                 guide to the best car manufacturers in India:</p>
+          </div>
+          <div class="card">
+            <h3>USED CARS</h3>
+            <img src="https://th.bing.com/th?id=OIP.SinnlcnaVxARpD8wWv85mgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.leN7qBD6njXt97PTIXbuNwHaEP&w=330&h=189&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?q=Certified+Used+Cars&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
+            <!-- <div class="fakeimg"><p>Image</p></div> -->
+            <!-- <div class="fakeimg"><p>Image</p></div> -->
+            <!-- <div class="fakeimg"><p>Image</p></div> -->
+          </div>
+          <div class="card">
+            <h3>Follow us on</h3>
+            <img src="https://th.bing.com/th?id=OIP.hGaetDAQWapgIJbIOhPhXwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" height="50" width="50">
+            <img src="https://th.bing.com/th?id=OIP.H836RvDYYgQZcZn0TC8qBAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"height="50" width="50" alt="">
+            <img src="https://th.bing.com/th?id=OIP.vVBHvUTzXuPNovUTHD0D8QHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"height="50" width="50" alt="">
+        </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+      
+  
+</body>
+</html>

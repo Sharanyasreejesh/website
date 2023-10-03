@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+        .header
+        {
+            text-align: center;
+            padding: 32px;
+        }
+        .row
+        {
+            display: flex;
+            flex-wrap: wrap;
+            padding: o 4px;
+        }
+        .column
+        {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img{
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        @media(max-width: 800px)
+{
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+
+}
+@media(max-width: 600px)
+{
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>IMAGE GALLERY</h1>
+    <P>This is a responsive image gallery. resize the browser to see changes.</P>
+    <div class="row">
+        <div class="column">
+        <img src="https://th.bing.com/th?id=OIP.-QxlZt9tROyudK8Bg0svewHaE5&w=307&h=203&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+        <img src="https://th.bing.com/th?id=OIP.mVCdJL0DY_DV_aen4hBK0wHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+        <img src="https://th.bing.com/th?id=OIP.ADxbxfNWjCnbsap-1FQZlgHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+        <img src="https://th.bing.com/th?id=OIP.YEe7jjvj3XtaZgPXX7JJ7QHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+        </div>
+        <div class="column">
+            <img src="https://th.bing.com/th?id=OIP.8eJNMEsDP4uYuV4dl--i9gHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src=" https://th.bing.com/th?id=OIP.Vtxy0FjT_EfudI4cQk1kzAHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.nv9g-1pv95SNmT7Lsj26HwHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.z6pGwFhPvV4_Yn2ruRtQTwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+   </div>
+   <div class="column">
+    <img src="https://th.bing.com/th?q=Incredible+Flowers&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">     
+<img src="https://th.bing.com/th/id/OIP.HKADtOXN2thLHouCqmvbNwHaFX?w=279&h=202&c=7&r=0&o=5&pid=1.7" alt="">
+<img src="https://th.bing.com/th/id/OIP.RG58DaO7kXIPA2oTSLS6kAHaE8?w=303&h=202&c=7&r=0&o=5&pid=1.7" alt="">
+<img src="https://th.bing.com/th/id/OIP.S3K2SYkm7D5pP9nJNIYIQQHaEo?w=257&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+</div>
+<div class=" column">
+    <img src="https://th.bing.com/th/id/OIP.AQ7bywIG1Lwk3czNH8MHzQHaFI?w=254&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+<img src="https://th.bing.com/th/id/OIP.ADnh4H4oocBGY-32wocizgHaEj?w=283&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+<img src="https://th.bing.com/th/id/OIP.ygTqdnNKaCM37SL2BpROQwHaFj?w=235&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+<img src="https://th.bing.com/th/id/OIP.OHdDX-mVi5rHd5cVjTq4RQHaFj?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+</body>
+
+</html>
